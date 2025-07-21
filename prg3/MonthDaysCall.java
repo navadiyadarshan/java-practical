@@ -44,7 +44,7 @@ class MonthDays {
 }
 
 class MonthDaysCall {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         int month = Integer.parseInt(args[0]);
         MonthDays obj = new MonthDays();
         obj.printDays(month);

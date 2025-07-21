@@ -18,10 +18,6 @@ class NumberChecks {
     }
 
     void checkPrime(int num) {
-        if (num <= 1) {
-            System.out.println(num + " is Not Prime");
-            return;
-        }
         for (int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
                 System.out.println(num + " is Not Prime");
@@ -48,9 +44,9 @@ class NumberChecks {
 }
 
 class NumberCall {
-    public static void main(String[] args) throws IOException {
+    public static void main(String args[]) throws IOException {
         BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
-        NumberChecks nc = new NumberChecks();
+        NumberChecks ob = new NumberChecks();
         int choice;
 
         do {
@@ -69,16 +65,16 @@ class NumberCall {
 
                 switch (choice) {
                     case 1:
-                        nc.checkPositiveNegative(num);
+                        ob.checkPositiveNegative(num);
                         break;
                     case 2:
-                        nc.checkOddEven(num);
+                        ob.checkOddEven(num);
                         break;
                     case 3:
-                        nc.checkPrime(num);
+                        ob.checkPrime(num);
                         break;
                     case 4:
-                        nc.checkArmstrong(num);
+                        ob.checkArmstrong(num);
                         break;
                 }
             } else if(choice != 5){

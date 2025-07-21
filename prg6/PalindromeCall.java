@@ -17,7 +17,7 @@ class Palindrome {
 }
 
 class PalindromeCall {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         Palindrome palindrome = new Palindrome();
         palindrome.printPalindromes();
     }

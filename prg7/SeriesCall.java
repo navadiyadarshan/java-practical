@@ -17,7 +17,7 @@ class Series {
 }
 
 class SeriesCall {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         int n = Integer.parseInt(args[0]);
         Series series = new Series();
         series.printSeries(n);

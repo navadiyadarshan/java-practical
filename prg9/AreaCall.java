@@ -18,9 +18,9 @@ class AreaCalculator {
 }
 
 class AreaCall {
-    public static void main(String[] args) throws IOException {
+    public static void main(String args[]) throws IOException {
         BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
-        AreaCalculator ac = new AreaCalculator();
+        AreaCalculator obj = new AreaCalculator();
         int choice;
         do {
             System.out.println("\n--- Area Calculator Menu ---");
@@ -36,19 +36,19 @@ class AreaCall {
                 case 1:
                     System.out.print("Enter radius of circle: ");
                     float radius = Float.parseFloat(rd.readLine());
-                    ac.area(radius);
+                    obj.area(radius);
                     break;
                 case 2:
                     System.out.print("Enter length of rectangle: ");
                     float length = Float.parseFloat(rd.readLine());
                     System.out.print("Enter breadth of rectangle: ");
                     float breadth = Float.parseFloat(rd.readLine());
-                    ac.area(length, breadth);
+                    obj.area(length, breadth);
                     break;
                 case 3:
                     System.out.print("Enter side of square: ");
                     int side = Integer.parseInt(rd.readLine());
-                    ac.area(side);
+                    obj.area(side);
                     break;
                 case 4:
                     break;

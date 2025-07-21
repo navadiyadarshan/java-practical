@@ -18,7 +18,7 @@ class Item {
     }
 }
 class ItemCall {
-    public static void main(String[] args) throws IOException {
+    public static void main(String args[]) throws IOException {
         BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
         Item[] items = new Item[5];
 

@@ -12,9 +12,8 @@ class Circle {
     }
 }
 
-@SuppressWarnings("unused")
 class CircleCall {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
             int radius = Integer.parseInt(args[0]);
             Circle circle = new Circle();
             circle.area(radius);

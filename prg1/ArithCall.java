@@ -1,4 +1,3 @@
-
 class Arithmnatic {
     void cal(int a, int b) {
         System.out.println("Addition: " + (a + b));
@@ -8,9 +7,8 @@ class Arithmnatic {
     }
 }
 
-@SuppressWarnings("unused")
 class ArithCall {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         int num1 = Integer.parseInt(args[0]);
         int num2 = Integer.parseInt(args[1]);
 

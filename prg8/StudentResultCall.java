@@ -33,8 +33,7 @@ class Student {
 }
 
 class StudentResultCall {
-
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         String rollNo = args[0];
         String name = args[1];
         int m1 = Integer.parseInt(args[2]);
